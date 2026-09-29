@@ -1983,8 +1983,8 @@ class ProcessJumplinks extends Process
     // ... and go!
     switch ($importType) {
       case 'csv':
-        // Require the CSV reader
-        require_once __DIR__ . '/Classes/LeagueCsv/autoload.php';
+        // Castus: league/csv comes from Composer (this package's composer.json)
+        // rather than the copy that was vendored in Classes/LeagueCsv.
         $reader = League\Csv\Reader::createFromString($this->input->post->csvData);
         $reader->setDelimiter($this->input->post->csvDelimiter);
         $reader->setEnclosure($this->input->post->csvEnclosure);
