@@ -49,7 +49,6 @@ Keep league/csv on `^7.2`: version 9 changed the `Reader` API that the import co
 1. **One-time setup** in your clone:
 
    ```sh
-   git config core.autocrlf false
    git remote add upstream https://gitlab.com/rockettpw/seo/jumplinks-one.git
    ```
 
